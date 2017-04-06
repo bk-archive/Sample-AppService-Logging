@@ -10,11 +10,13 @@ namespace Sample_AppService_Logging.Controllers
     {
         public ActionResult Index()
         {
+            System.Diagnostics.Trace.TraceInformation("Index Page");
             return View();
         }
 
         public ActionResult About()
         {
+            System.Diagnostics.Trace.TraceInformation("About Page");
             ViewBag.Message = "Your application description page.";
 
             return View();
@@ -22,6 +24,7 @@ namespace Sample_AppService_Logging.Controllers
 
         public ActionResult Contact()
         {
+            System.Diagnostics.Trace.TraceInformation("Contact Page");
             ViewBag.Message = "Your contact page.";
 
             return View();
