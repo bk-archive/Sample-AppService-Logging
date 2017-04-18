@@ -13,7 +13,7 @@ namespace Sample_AppService_Logging.Controllers
             //System.Diagnostics.Trace.TraceInformation("This is an Info Message");
 
             var rand = new Random();
-            int r = rand.Next(3);
+            int r = rand.Next(5);
 
             System.Diagnostics.Trace.TraceInformation("Index = "  + r );
 
