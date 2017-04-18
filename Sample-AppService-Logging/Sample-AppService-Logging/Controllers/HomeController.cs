@@ -10,7 +10,18 @@ namespace Sample_AppService_Logging.Controllers
     {
         public ActionResult Index()
         {
-            System.Diagnostics.Trace.TraceInformation("This is an Info Message");
+            //System.Diagnostics.Trace.TraceInformation("This is an Info Message");
+
+            var rand = new Random();
+            int r = rand.Next(3);
+
+            System.Diagnostics.Trace.TraceInformation("Index = "  + r );
+
+            if (r == 1)
+            {
+                throw new Exception();
+            }
+            
             return View();
         }
 
