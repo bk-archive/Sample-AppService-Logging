@@ -17,7 +17,7 @@ namespace Sample_AppService_Logging.Controllers
 
             System.Diagnostics.Trace.TraceInformation("Index = "  + r );
 
-            if (r == 1)
+            if (r <= 3)
             {
                 throw new Exception();
             }
